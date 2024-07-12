@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trésor Culinaire - Restaurant à Paldea</title>
+        <meta
+            name="description"
+            content="Page web du restaurant Trésor Culinaire"
+        />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/global.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Plan du site
+    En-tête
+        nom restaurant
+        navbar
+        réseaux sociaux
+        burger (mobile)
+    Hero
+        photo devanture
+        nom resto + phrase
+    À Propos
+        Description restaurant + Mezclamora
+        photos intérieur ???
+    Carte
+        img plats
+        txt du jeu
+    Activités
+        changement type téracristal
+        examen
+    Avis clients
+    Plan ville
+    Contact
+    Pied-de-page
+        réseaux sociaux
+        copyright
+    -->
+
+        <!-- Ancre retour haut de page, à placer avant le reste du code -->
+        <a id="top"></a>
+
+        <header class="header">
+            <div class="container d-flex">
+                <div class="logo">Trésor Culinaire</div>
+                <nav class="navbar">
+                    <ul class="menu list-unstyled">
+                        <li><a href="#top">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#carte">Carte</a></li>
+                        <li><a href="#activities">Activités</a></li>
+                        <li><a href="#review">Avis</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <ul class="socials list-unstyled">
+                        <li>
+                            <a
+                                href="https://scarletviolet.pokemon.com/fr-fr/"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon pokemon"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM5.07089 13C5.55612 16.3923 8.47353 19 12 19C15.5265 19 18.4439 16.3923 18.9291 13H14.8293C14.4174 14.1652 13.3062 15 12 15C10.6938 15 9.58251 14.1652 9.17068 13H5.07089ZM18.9291 11C18.4439 7.60771 15.5265 5 12 5C8.47353 5 5.55612 7.60771 5.07089 11H9.17068C9.58251 9.83481 10.6938 9 12 9C13.3062 9 14.4174 9.83481 14.8293 11H18.9291ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.nintendo.com/fr-fr/"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon nintendo"
+                                    viewBox="0 0 32 32"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18.901 32h4.901c4.5 0 8.198-3.698 8.198-8.198v-15.604c0-4.5-3.698-8.198-8.198-8.198h-5c-0.099 0-0.203 0.099-0.203 0.198v31.604c0 0.099 0.099 0.198 0.302 0.198zM25 14.401c1.802 0 3.198 1.5 3.198 3.198 0 1.802-1.5 3.198-3.198 3.198-1.802 0-3.198-1.396-3.198-3.198-0.104-1.797 1.396-3.198 3.198-3.198zM15.198 0h-7c-4.5 0-8.198 3.698-8.198 8.198v15.604c0 4.5 3.698 8.198 8.198 8.198h7c0.099 0 0.203-0.099 0.203-0.198v-31.604c0-0.099-0.099-0.198-0.203-0.198zM12.901 29.401h-4.703c-3.099 0-5.599-2.5-5.599-5.599v-15.604c0-3.099 2.5-5.599 5.599-5.599h4.604zM5 9.599c0 1.698 1.302 3 3 3s3-1.302 3-3c0-1.698-1.302-3-3-3s-3 1.302-3 3z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/pokemonfr" target="_blank">
+                                <svg
+                                    class="icon twitter"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/pokemon.fra/"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon insta"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="burger">
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section - Hero -->
+
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item">
+                        <h1>
+                            Trésor Culinaire
+                            <span style="color: var(--couleur-fond)">•</span>
+                            Mezclamora
+                        </h1>
+                        <p class="quote">
+                            "Le meilleur restaurant de Mezclamora !"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section - A propos-->
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item slide">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img
+                                    src="./img/interieur_salle.jpg"
+                                    style="width: 100%"
+                                />
+                                <div class="text">
+                                    Venez profiter d'une grande salle dans un
+                                    décor typique
+                                </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img
+                                    src="./img/interieur_bar.jpg"
+                                    style="width: 100%"
+                                />
+                                <div class="text">
+                                    Vous pouvez également déjeuner au bar, notre
+                                    cheffe cuisinera devant vos yeux
+                                </div>
+                            </div>
+
+                            <!-- Boutons précédent et suivant -->
+                            <a class="prev" onclick="plusSlides(-1)"
+                                >&#10094;</a
+                            >
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+
+                        <!-- Les points sous les slides -->
+                        <div>
+                            <span
+                                class="dot active"
+                                onclick="currentSlide(1)"
+                            ></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <p>
+                            Le Trésor Culinaire est un restaurant situé dans la
+                            ville de Mezclamora dans la Zone Ouest n°3.
+                            Véritable point de passage pour les visiteurs en
+                            route vers les cimes du Mont Nappé, nombre d'entre
+                            eux s'arrêtent à Mezclamora pour se préparer et
+                            manger dans les nombreux restaurants de la ville,
+                            dont le Trésor Culinaire. On y trouve des plats qui
+                            permettent au joueur de bénéficier de différents
+                            effets selon le produit choisi. Le restaurant abrite
+                            également l'arène de Mezclamora, où le Champion
+                            Okuba affronte les jeunes dresseurs venus de
+                            l'Académie de Mesaledo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section - Carte-->
+
+        <section id="carte" class="carte">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Notre carte</h2>
+                </div>
+                <div class="grid">
+                    <div class="grid__item">
+                        <div class="carte__left">
+                            <img
+                                src="./img/carte/boulette_riz_moutarde.png"
+                                alt="Boulette de riz à la moutarde"
+                            />
+                        </div>
+                        <div class="carte__right">
+                            <h3 class="carte__name">
+                                Boulette de riz à la moutarde
+                            </h3>
+                            <p class="carte__price">750 ₽</p>
+                            <p class="carte__descr">
+                                La touche piquante édulcore lel goût du riz. Le
+                                fait qu'il ait été pétri avec légèreté ajoute du
+                                charme à ce plat.
+                            </p>
+                            <div class="carte__auras">
+                                <h4>Auras Gustatives :</h4>
+                                <ul class="list-unstyled">
+                                    <li>Rencontre Roche</li>
+                                    <li>Capture Glace</li>
+                                    <li>Géante Électrik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="carte__left">
+                            <img
+                                src="./img/carte/soupe_sucree_haricots_rouges.png"
+                                alt="Soupe sucrée de haricots rouges"
+                            />
+                        </div>
+                        <div class="carte__right">
+                            <h3 class="carte__name">
+                                Soupe sucrée de haricots rouges
+                            </h3>
+                            <p class="carte__price">800 ₽</p>
+                            <p class="carte__descr">
+                                La touche piquante édulcore le goût du riz. Le
+                                fait u'il ait été pétri avec légèreté ajoute du
+                                charme à ce plat.
+                            </p>
+                            <div class="carte__auras">
+                                <h4>Auras Gustatives :</h4>
+                                <ul class="list-unstyled">
+                                    <li>Expérience Normal</li>
+                                    <li>Échantillons Acier</li>
+                                    <li>Rencontre Poison</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="carte__left">
+                            <img
+                                src="./img/carte/prunes_salees_faites_maison.png"
+                                alt="Prunes salées faites maison"
+                            />
+                        </div>
+                        <div class="carte__right">
+                            <h3 class="carte__name">
+                                Prunes salées faites maison
+                            </h3>
+                            <p class="carte__price">500 ₽</p>
+                            <p class="carte__descr">
+                                Ces prunes salées sont si acides qu'elles
+                                titillent la langue. Un vrai régal.
+                            </p>
+                            <div class="carte__auras">
+                                <h4>Auras Gustatives :</h4>
+                                <ul class="list-unstyled">
+                                    <li>Minuscule Feu</li>
+                                    <li>Expérience Spectre</li>
+                                    <li>Œuf</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="carte__left">
+                            <img
+                                src="./img/carte/saute_de_melon_amer.png"
+                                alt="Sauté de melon amer"
+                            />
+                        </div>
+                        <div class="carte__right">
+                            <h3 class="carte__name">Sauté de melon amer</h3>
+                            <p class="carte__price">950 ₽</p>
+                            <p class="carte__descr">
+                                Avec ce plat, la patronne a cherché à recréer un
+                                mets qu'elle a découvert dans la région de
+                                Hoenn.
+                            </p>
+                            <div class="carte__auras">
+                                <h4>Auras Gustatives :</h4>
+                                <ul class="list-unstyled">
+                                    <li>Échantillons Sol</li>
+                                    <li>Géante Spectre</li>
+                                    <li>Rencontre Roche</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="carte__left">
+                            <img
+                                src="./img/carte/soupe_de_nouilles.png"
+                                alt="Soupe de nouilles"
+                            />
+                        </div>
+                        <div class="carte__right">
+                            <h3 class="carte__name">Soupe de nouilles</h3>
+                            <p class="carte__price">920 ₽</p>
+                            <p class="carte__descr">
+                                Des nouilles de sarrasin servies juste avec de
+                                l'oignon en garniture pour mieux savourer leur
+                                goût mêlé au bouillon.
+                            </p>
+                            <div class="carte__auras">
+                                <h4>Auras Gustatives :</h4>
+                                <ul class="list-unstyled">
+                                    <li>Œuf</li>
+                                    <li>Rencontre Feu</li>
+                                    <li>Raid Plante</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section - Les activités du restaurant -->
+
+        <section id="activities" class="activities">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Les activités du restaurant</h2>
+                </div>
+                <div class="grid">
+                    <div class="grid__item">
+                        <h3>Changement de type Téracristal</h3>
+                        <p>
+                            Notre cheffe se fera un plaisir de préparer un plat
+                            pour votre Pokémon si vous souhaitez changer son
+                            type Téracristal, en échange de 50 Téra-Éclats du
+                            type désiré.
+                        </p>
+                        <img
+                            src="./img/cheffe.jpg"
+                            alt="Photo de la cheffe du restaurant"
+                        />
+                    </div>
+                    <div class="grid__item">
+                        <h3>La voie du Maître</h3>
+                        <p>
+                            Le Trésor Culinaire est fier d'accueillir les élèves
+                            de l'Académie de Mesaledo participant à l'examen
+                            d'Arène de Mezclamora. Pour démarrer l'épreuve il
+                            vous suffit de parler au membre de notre personnel à
+                            l'entrée du restaurant !
+                        </p>
+                        <img
+                            src="./img/okuba.jpg"
+                            alt="Photo du champion Okuba et d'un élève"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section - Avis des clients -->
+
+        <section id="review" class="review">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Avis de nos clients</h2>
+                </div>
+                <div class="grid">
+                    <div class="grid__item">
+                        <img
+                            class="review__photo"
+                            src="./img/clients/client_brun.jpg"
+                            alt="Client brun"
+                        />
+                        <p class="review_comment">
+                            Ça alors ! J'ai jamais rien mangé d'aussi bon !
+                        </p>
+                    </div>
+                    <div class="grid__item">
+                        <img
+                            class="review__photo"
+                            src="./img/clients/client_casquette.jpg"
+                            alt="Client blond avec une casquette"
+                        />
+                        <p class="review_comment">
+                            La cuisine y est délicieuse !
+                        </p>
+                    </div>
+                    <div class="grid__item">
+                        <img
+                            class="review__photo"
+                            src="./img/clients/cliente_bar.jpg"
+                            alt="Cliente aux cheveux gris au bar"
+                        />
+                        <p class="review_comment">Ça a l'air délicieux !</p>
+                    </div>
+                    <div class="grid__item">
+                        <img
+                            class="review__photo"
+                            src="./img/clients/client_bar.jpg"
+                            alt="Client brun au bar"
+                        />
+                        <p class="review_comment">C'était un régal !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section - Contact -->
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p>
+                        Vous désirez nous contacter ?
+                        <br />
+                        Remplissez le formulaire ci-dessous !
+                    </p>
+                </div>
+                <form action="contact.php" class="form">
+                    <label for="firstname">
+                        <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            placeholder="Nom"
+                        />
+                    </label>
+                    <label for="lastname">
+                        <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            placeholder="Prénom"
+                        />
+                    </label>
+                    <label for="email">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email*"
+                            required
+                        />
+                    </label>
+                    <label for="tel">
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            placeholder="Téléphone"
+                            pattern="[0-9]*"
+                        />
+                    </label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Message*"
+                        required
+                    ></textarea>
+                    <p>* Ces champs sont obligatoires</p>
+                    <input
+                        type="submit"
+                        id="submit"
+                        class="btn"
+                        value="Envoyer"
+                    />
+                </form>
+            </div>
+        </section>
+
+        <!-- Section : Maps -->
+
+        <section class="maps">
+            <div></div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item">
+                        <p>Bruno UFFLER</p>
+                    </div>
+                    <div class="grid__item">
+                        <ul class="socials list-unstyled">
+                            <!-- Liens RS -->
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/bruno.uffler"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        class="icon facebook"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 320 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/bruno-uffler-b82b39313/"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        class="icon linkedin"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://x.com/bnoru_ufr"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        class="icon twitter"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://instagram.com/bnoruu/"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        aria-hidden="true"
+                                        class="icon insta"
+                                        focusable="false"
+                                        data-prefix="fab"
+                                        data-icon="instagram"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__item">
+                        <p>
+                            Copyright © The Pokémon Company. All Rights
+                            Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
