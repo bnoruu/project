@@ -296,7 +296,7 @@ img {
 /* Début Hero */
 
 .hero {
-    background-image: url(../img/devanture.jpg);
+    background-image: url(./img/devanture.jpg);
     background-size: cover; /* le fond prend la largeur de l'écran */
     background-position: center;
     background-color: var(
